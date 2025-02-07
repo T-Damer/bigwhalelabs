@@ -5,7 +5,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig({
   plugins: [preact(), tsconfigPaths()],
-  base: 'bigwhalelabs',
+  base: '/bigwhalelabs/',
   build: {
     rollupOptions: {
       plugins: [

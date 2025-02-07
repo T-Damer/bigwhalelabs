@@ -14,6 +14,6 @@ export default defineConfig({
         }) as unknown as Plugin,
       ],
     },
-    outDir: './docs',
+    outDir: 'dist',
   },
 })

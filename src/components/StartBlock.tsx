@@ -24,6 +24,8 @@ import classnames, {
   wordBreak,
   zIndex,
 } from 'classnames/tailwind'
+import colorfulWhale from '/img/colorful-whale.webp'
+import gemImg from '/img/gem.webp'
 import useBreakpoints from 'hooks/useBreakpoints'
 import usePressKey from 'hooks/usePressKey'
 
@@ -112,8 +114,8 @@ export default function () {
     <div className={sectionWrapper}>
       <ParallaxProvider>
         <Parallax className={parallaxWrapper} speed={25}>
-          <img className={leftGem} src="/img/gem.webp" />
-          <img className={rightGem} src="/img/gem.webp" />
+          <img className={leftGem} src={gemImg} />
+          <img className={rightGem} src={gemImg} />
           <div className={ironSphere}>
             <IronSphere />
           </div>
@@ -121,7 +123,7 @@ export default function () {
             <img
               className={bigWhaleStyles}
               ref={whale}
-              src="/img/colorful-whale.webp"
+              src={colorfulWhale}
               style={{
                 transform: `scale(${
                   !defaultMd && !lg ? 0.75 : !lg ? 1.0 : 1.25
